@@ -39,7 +39,7 @@ IF "%MODIFYHOSTS%"=="N" (
 	ECHO Skipping modification of the hosts file >> "%LOGFILE%"
 	ECHO   Skipping hosts file
 ) ELSE (
-	IF NOT EXIST "%HTEMPDIR%" MKDIR %HTEMPDIR% >> "%LOGFILE%" 2>&1 
+	IF NOT EXIST "%HTEMPDIR%" MKDIR "%HTEMPDIR%" >> "%LOGFILE%" 2>&1 
 
 	@REM Clear old temp hosts files
 	IF EXIST "%TMPHOSTS%" DEL /F /Q "%TMPHOSTS%" >> "%LOGFILE%" 2>&1
