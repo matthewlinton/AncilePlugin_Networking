@@ -1,2 +1,5 @@
+1.1
+	Commented out "13.107.4.50 255.255.255.255" This breaks Windows Update for some people
+
 1.0
 	Initial Creation
